@@ -7,13 +7,6 @@ import tornado.template
 from settings import settings
 from urls import urls
 
-document = """
-  a: 1
-  b:
-    c: 3
-    d: 4
-"""
-
 application = tornado.web.Application(
     handlers=urls,
     **settings
